@@ -18,8 +18,7 @@ public class HeroListServlet extends HttpServlet {
         response.setContentType("text/html; charset=UTF-8");
          
         List<Hero> heros = new HeroDAO().list();
-        System.out.println("list succseed");
- 
+        
         StringBuffer sb = new StringBuffer();
         sb.append("<table align='center' border='1' cellspacing='0'>\r\n");
         sb.append("<tr><td>id</td><td>name</td><td>hp</td><td>damage</td><td>edit</td><td>delete</td></tr>\r\n");

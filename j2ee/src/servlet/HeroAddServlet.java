@@ -19,12 +19,11 @@ public class HeroAddServlet extends HttpServlet {
  
         Hero hero = new Hero();
         hero.setName(request.getParameter("name"));
-        System.out.println("setname process finished");
         hero.setHp(Float.parseFloat(request.getParameter("hp")));
-        hero.setDamage(Integer.parseInt(request.getParameter("damage")));
-        System.out.println("setdamage process finished");
+        hero.setDamage(Integer.parseInt(request.getParameter("damage")));  
+        
         new HeroDAO().add(hero);
-        System.out.println("add Hero finished");
+      
         response.sendRedirect("listHero");
         System.out.println("jumped");
          
