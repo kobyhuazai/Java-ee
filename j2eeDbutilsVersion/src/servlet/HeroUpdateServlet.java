@@ -26,6 +26,7 @@ public class HeroUpdateServlet extends HttpServlet {
  
         try {
 			new HeroDAO().update(hero);
+		
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
