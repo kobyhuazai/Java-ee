@@ -25,7 +25,7 @@ public class HeroUpdateServlet extends HttpServlet {
  
         new HeroDAO().update(hero);
  
-        response.sendRedirect("listHero");
+        response.sendRedirect("Herolist.jsp");
  
     }
 }

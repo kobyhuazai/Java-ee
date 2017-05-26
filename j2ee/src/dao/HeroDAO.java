@@ -55,8 +55,7 @@ public class HeroDAO {
 	            ps.setInt(3, hero.damage);
 	  
 	            ps.execute();
-	            System.out.println("sql finished");
-	  
+	            	  
 	            ResultSet rs = ps.getGeneratedKeys();
 	            if (rs.next()) {
 	                int id = rs.getInt(1);

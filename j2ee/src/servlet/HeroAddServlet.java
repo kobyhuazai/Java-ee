@@ -25,7 +25,6 @@ public class HeroAddServlet extends HttpServlet {
         new HeroDAO().add(hero);
       
         response.sendRedirect("listHero");
-        System.out.println("jumped");
          
     }
 }
